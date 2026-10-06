@@ -1,18 +1,9 @@
 === date ===
-Tue Oct  6 06:16:45 UTC 2026
+Tue Oct  6 06:19:51 UTC 2026
 === java ===
 openjdk version "17.0.20.1" 2026-08-18
 OpenJDK Runtime Environment Temurin-17.0.20.1+1 (build 17.0.20.1+1)
 OpenJDK 64-Bit Server VM Temurin-17.0.20.1+1 (build 17.0.20.1+1, mixed mode, sharing)
-=== environment ===
-ANDROID_HOME=/usr/local/lib/android/sdk
-ANDROID_SDK_ROOT=/usr/local/lib/android/sdk
-=== sdkmanager ===
-/home/runner/work/_temp/af7c8aaf-edc1-4b1e-b98c-9d6c5deed4a0.sh: line 14: sdkmanager: command not found
-=== install sdk ===
-/home/runner/work/_temp/af7c8aaf-edc1-4b1e-b98c-9d6c5deed4a0.sh: line 16: sdkmanager: command not found
-yes: standard output: Broken pipe
-/home/runner/work/_temp/af7c8aaf-edc1-4b1e-b98c-9d6c5deed4a0.sh: line 17: sdkmanager: command not found
 === gradle ===
 
 Welcome to Gradle 9.8.0!
@@ -39,7 +30,7 @@ Launcher JVM:  17.0.20.1 (Eclipse Adoptium 17.0.20.1+1)
 Daemon JVM:    /usr/lib/jvm/temurin-17-jdk-amd64 (no Daemon JVM specified, using current Java home)
 OS:            Linux 6.17.0-1022-azure amd64
 
-=== android build ===
+=== build ===
 To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
 Daemon will be stopped at the end of the build 
 > Task :app:preBuild UP-TO-DATE
@@ -65,16 +56,16 @@ Daemon will be stopped at the end of the build
 > Task :app:compressDebugAssets
 > Task :app:desugarDebugFileDependencies
 > Task :app:mergeDebugJniLibFolders
-> Task :app:checkDebugDuplicateClasses
 > Task :app:mergeDebugNativeLibs NO-SOURCE
 > Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:validateSigningDebug
 > Task :app:processDebugManifestForPackage
 > Task :app:mergeLibDexDebug
-> Task :app:mergeExtDexDebug
-> Task :app:processDebugResources
-> Task :app:validateSigningDebug
 > Task :app:writeDebugAppMetadata
 > Task :app:writeDebugSigningConfigVersions
+> Task :app:mergeExtDexDebug
+> Task :app:processDebugResources
 > Task :app:compileDebugKotlin
 > Task :app:compileDebugJavaWithJavac NO-SOURCE
 > Task :app:dexBuilderDebug
@@ -94,7 +85,7 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 1m 15s
+BUILD SUCCESSFUL in 1m 12s
 33 actionable tasks: 33 executed
 Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.8.0/userguide/configuration_cache_enabling.html
 BUILD_EXIT_CODE=0
